@@ -14,3 +14,23 @@ function processArray(arr) {
 }
 
 console.log(processArray([1,2,3,4,5,6,7,8,9]))
+
+
+
+function formatArraystrings(strings,numbers) {
+    let string =[]
+    for (let index = 0; index < strings.length; index++) {
+       let arrayString = strings[index]
+       let arrayNumber = numbers[index]
+
+       if (arrayNumber % 2 === 0) {
+        string[string.length] = arrayString.toUpperCase()
+       } else {
+        string[string.length] = arrayString.toLowerCase()
+       }
+        
+    }
+
+    return string
+}
+
